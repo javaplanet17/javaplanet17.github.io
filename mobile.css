@@ -1,0 +1,111 @@
+@media(min-width:60px ) and (max-width: 999px){
+	.left{
+		width: 80%;
+		float: left;
+		
+	}
+	.right{
+		width: 20%;
+		float: left;
+		
+	}
+	.navigation{
+		height: 50px;
+		
+	}
+	.nav{
+		height: 50px;
+	}
+	.content{
+		
+		
+	}
+	.cleft{
+		
+		margin-left: 10px;
+	}
+	.linelist{
+		margin-left: -40px;
+	}
+	.bold{
+		font-size: 20px;
+	}
+	.inline{
+		list-style-type: none;
+		margin-top: 10px;
+		width: 30%;
+		background: transparent;
+		border-bottom: 2px solid transparent;
+	}
+	.yellow{
+		margin-top: 10px;
+	}
+	.more{
+		width: 50%;
+	}
+	
+	.cright{
+		height: 500px;
+		display: none;
+	}
+	.bigbold{
+
+	}
+	.text-right{
+		display: none;
+	}
+	.menu-right{
+		display: block;
+		text-align: right;
+		margin-right: 10px;
+	}
+	.menu-left{
+		margin-left: 10px;
+	}
+	/*.inneralert{
+		width: 90% !important;
+		margin: 0px auto;
+		background: white;
+		border:1px solid black;
+		display: none;
+		margin-top: 50px;
+		height: auto;
+	}*/
+
+	/*coloring*/
+		.red:hover{
+			color: red;
+			border-bottom: 2px solid red;
+			width: 68px;
+		}
+		.lime:hover{
+			color: lime;
+			border-bottom: 2px solid lime;
+			width: 26px;
+		}
+		.yellow:hover{
+			color: yellow;
+			border-bottom: 2px solid yellow;
+			width: 35px;
+		}
+		.purple:hover{
+			color: purple;
+			border-bottom: 2px solid purple;
+			width: 27px;
+		}
+		.orange:hover{
+			color: orange;
+			border-bottom: 2px solid orange;
+			width: 44px;
+		}
+		.brown:hover{
+			color: brown;
+			border-bottom: 2px solid brown;
+			width: 40px;
+		}
+		.more:hover{
+			color: blue;
+			border-bottom: 2px solid blue;
+			width: 110px;
+		}
+}

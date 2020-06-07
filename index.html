@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="desktop.css">
+	<link rel="stylesheet" type="text/css" href="tablet.css">
+	<link rel="stylesheet" type="text/css" href="mobile.css">
+</head>
+<body>
+	<div class="alert" id="alert" onclick="remove();">
+		<div class="inneralert" id="inneralert">
+			<!-- works -->
+			<div id="work" class="work">
+				<ul>
+					<h2>Project</h2>
+					<li class="inline"><a href="pizzapop"><img src="pizzapop.png" width="150" height="100"></a></li>
+					<h2>Resume</h2>
+					<li class="inline"><img onclick='show()' src="resume.jpg" width="100" height="150"></li>
+				</ul>
+			</div>
+
+			<!-- just resume -->
+
+			<div id="resume" class="resume">
+				<ul>
+					<h2>Resume</h2>
+					
+					<li class="inline"><img id="resumeimage" onclick='fullresume()' src="resume.jpg" ></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="navigation">
+		<div class="left nav">
+			<h3 class="menu-left">Portofolio</h3>
+		</div>
+
+		<div class="right nav">
+			<ul>
+				<li class="text-right" id="menu" onclick="show();"><b>Resume</b></li>
+				<li class="menu-right" id="menu" onclick="show();"><img src="pizzapop/img/menu.png" width="12px" height="12px"></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="left cleft">
+			<h2 class="bigbold">Full Stack Website Developer</h2>
+			<p class="subbold">I am a web developer with talent for the front side as well as the back side and database for website technologies.</p>
+
+			<ul class="linelist">
+				<li class="inline"><b class="bold">Skill:</b></li>
+				<li class="inline list yellow">Html</li>
+				<li class="inline list lime">Css</li>
+				<li class="inline list red">Javascript</li>
+				<li class="inline list purple">Php</li>
+				<li class="inline list orange">Mysql</li>
+				<li class="inline list brown">Gimp</li>
+				<li class="inline list more" onclick="show();">Click for More...</li>
+			</ul>
+		</div>
+		<div class="right cright">
+			<ul>
+				<li class="inline"><a href="pizzapop"><img src="pizzapop.png" width="300" height="150"></a></li>
+				<li class="inline"><img onclick='show()' src="resume.jpg" width="250" height="300"></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="navigation">
+		<div class="left nav">
+			<h3 class="menu-left">Javaplanet17@gmail.com</h3>
+		</div>
+
+		<div class="right nav">
+			<ul>
+				<li class="text-right"><b>FullStack Developer</b></li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

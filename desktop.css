@@ -1,0 +1,151 @@
+@media(min-width:1000px) and (max-width: 2000px){
+		.bigbold{
+			font-size: 44px;
+			width: 70%;
+			margin: 30px 0px;
+		}
+		.subbold{
+			margin-top: 65px;
+			padding-top: 0px;
+		}
+		.bold{
+			font-size: 17px;
+		}
+		.linelist{
+			margin: 0px -45px;
+			margin-top: 30px;
+		}
+		.list{
+			font-size: 15px;
+			color: grey;
+		}
+		.list:hover{
+			color: black;
+			padding-bottom: 3px;
+			border-bottom: 2px solid black;
+		}
+		.more:hover{
+			color: blue;
+			padding-bottom: 3px;
+			border-bottom: 2px solid blue;
+		}
+		.inline{
+			display: inline;
+			margin:0px 4px;
+		}
+		/*grid*/
+		.content{
+			margin-top: 50px;
+			display: grid;
+			grid-template-columns: repeat(8,1fr);
+			grid-gap: 10px;
+			/*auto-rows = height*/
+			grid-auto-rows: 110px;
+			grid-template-areas: 
+			"a a a a b b b b"
+			"a a a a b b b b"
+			"c c c c d d d d"
+			"c c c c d d d d"
+			;
+			align-items: start;
+		}
+		.navigation{
+			display: grid;
+			grid-template-columns: repeat(8,1fr);
+			grid-gap: 10px;
+			/*auto-rows = height*/
+			grid-auto-rows: 7px;
+			grid-template-areas: 
+			"a a a a b b b b"
+			"a a a a b b b b"
+			"c c c c d d d d"
+			"c c c c d d d d"
+			;
+			align-items: start;
+		}
+		.right{
+			grid-area: b;
+		}
+		.left{
+			grid-area: a;
+		}
+		/*alignment*/
+		.text-right{
+			text-align: right;
+			list-style: none;
+			color:gray;
+		}	
+		.menu-right{
+			display: none;
+		}
+		.text-right:hover{
+			color: blue;
+		}
+		body{
+			width: 86%;
+			margin:0px auto;
+		}
+		/*coloring*/
+		.red:hover{
+			color: red;
+			border-bottom: 2px solid red;
+		}
+		.lime:hover{
+			color: lime;
+			border-bottom: 2px solid lime;
+		}
+		.yellow:hover{
+			color: yellow;
+			border-bottom: 2px solid yellow;
+		}
+		.purple:hover{
+			color: purple;
+			border-bottom: 2px solid purple;
+		}
+		.orange:hover{
+			color: orange;
+			border-bottom: 2px solid orange;
+		}
+		.brown:hover{
+			color: brown;
+			border-bottom: 2px solid brown;
+		}
+}
+		
+
+.alert{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	z-index: 1px;
+	display: none;
+	background: rgba(0,0,0,0.4);
+}
+
+.inneralert{
+	width: 80%;
+	margin: 0px auto;
+	background: white;
+	border:1px solid black;
+	display: none;
+	margin-top: 50px;
+	height: auto;
+}
+
+.work{
+	display: none;
+}
+
+.resume{
+	display: none;
+	width: 100%;
+	margin: 0px auto;
+}
+
+#resumeimage{
+	width: 85%;
+	height: 400px;
+}
