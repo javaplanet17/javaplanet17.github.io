@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check out page</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+	<div class="leftinner" style="width: 100%; background: silver;">
+		<div class="top">
+			<div class="fifty">
+				<h2 style="margin-top: 8px;"><a href="index" style="color: black; text-decoration: none;">Lunchbreak</a></h2>
+			</div>
+			<div class="fifty txt-right">
+				<!-- sidebar -->
+			</div>
+		</div>
+	</div>
+
+	<div class="middle">
+		<div class="innermiddle">
+			<h1>we are preparing your order</h1>
+			<p>Thanky you for your purchase, your order will be in your hand 30 minute from now :)</p>
+			<div class="middlecontents">
+				<p class="left" style="margin-top: 10px;">Order Type: </p>
+				<p class="right" id="ordertype" style="margin-top: 10px;"></p>
+			</div>
+			<div class="middlecontents">
+				<p class="left" style="margin-top: 10px;">To: </p>
+				<p class="right" id="orderaddress" style="margin-top: 10px;"></p>
+			</div>
+			<div class="middlecontents">
+				<p class="left" style="margin-top: 10px;">Total: </p>
+				<p class="right" id="ordertotal" style="margin-top: 10px;"></p>
+			</div>
+			<div class="bottomcontent">
+				<b>Order List:</b>
+				<ul class="bottomcontentboxes" id="bottomcontentboxes">
+					<!-- <li>
+						<h2 style="margin-bottom: -5px;"><?php echo $_SESSION['order'][0]; ?></h2>
+						<div class="middlecontent">
+							<p class="left">Quantity: </p>
+							<p class="right"><?php echo $_SESSION['quantity'][0]; ?></p>
+						</div>
+					</li>
+					<li>
+						<h2 style="margin-bottom: -5px;"><?php echo $_SESSION['order'][1]; ?></h2>
+						<div class="middlecontent">
+							<p class="left">Quantity: </p>
+							<p class="right"><?php echo $_SESSION['quantity'][1]; ?></p>
+						</div>
+					</li> -->
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="checkout.js"></script>
+</body>
+</html>

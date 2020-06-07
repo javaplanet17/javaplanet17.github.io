@@ -1,0 +1,84 @@
+@media(min-width:60px ) and (max-width: 699px){
+	.left{
+		width: 100%;
+		float: left;
+		background: white;
+		height: 655px;
+	}
+
+	.right{
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		margin: 0px auto;
+		display: none;
+		width: 80%;
+		float: left;
+		background: white;
+		height: 540px;
+	}
+	.background{
+		display: none;
+		position: absolute;;
+		top: 0%;
+		bottom: 0%;
+		left: 0%;
+		right: 0%;
+		height: 650px;
+		background: rgba(0,0,0,0.4);
+	}
+	.txt-right{
+		display: block;
+		float: right;
+	}
+	.indicator{
+		display: none;
+		position: absolute;
+		top: 5%;
+		right: 5%;
+		background: lime;
+		color: white;
+		border-radius: 10px;
+		width: 17px;
+		height: 17px;
+	}
+	.cartboxes{
+		height: 170px;
+		margin-right: 20px;
+		overflow-y: scroll;
+	}
+	.cartbox{
+		background: white;
+		box-shadow: 3px 3px grey;
+		border:1px solid black;
+		list-style-type: none;
+		margin-left: -40px;
+		height: 80px;
+		width: 95%;
+		margin-top: 8px;
+		padding: 10px;
+		border:1px solid grey;
+		box-shadow: 3px 3px grey;
+	}
+	.cartbox h2{
+		margin-top: 0px;
+	}
+	.cartbox ul{
+		margin-left: -45px;
+	}
+	.cartboxleft{
+		float: left;
+		width: 33%;
+		height: 80px;
+	}
+	.cartboxmid{
+		float: left;
+		width: 57%;
+		height: 80px;
+	}
+	.cartboxright{
+		float: left;
+		width: 10%;
+		height: 80px;
+	}
+}

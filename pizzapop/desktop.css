@@ -1,0 +1,173 @@
+.inline{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.typebox{
+
+}
+.leftinner{
+	margin-left: 30px;
+}
+.fifty{
+	float: left;
+}
+.top{
+	height: 50px;
+	margin-top: 10px;
+}
+.edibleboxes{
+	height: 390px;
+	overflow-y: scroll;
+}
+.ediblebox{
+	border:1px solid grey;
+	box-shadow: 3px 3px grey;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 300px;
+}
+.ediblebutton{
+	background: none;
+	border:none;
+	font-weight: bold;
+	font-size: 16px;
+	height: 30px;
+	color: grey;
+}
+.ediblebutton:hover{
+	color: lime;
+}
+.orderwordbutton{
+	background: none;
+	border:none;
+	font-weight: bold;
+	font-size: 12px;
+	margin-left: -10px;
+	color: grey;
+}
+.orderwordbutton:hover{
+	color: white;
+}
+.cartbutton{
+	background: lime;
+	border:none;
+	box-shadow: 2px 2px grey;
+	padding: 10px 20px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.deletebutton{
+	background: none;
+	border:none;
+	color: red;
+	margin-top: 5px;
+}
+.checkoutbutton{
+	width: 80%;
+	height: 40px;
+	background: lime;
+	border-radius: 5px;
+	border:1px solid grey;
+	box-shadow: 3px 3px grey;
+	font-size: 20px;
+	font-weight: bold;
+}
+.addressinput{
+	border:none;
+	background: none;
+	width: 100%;
+	margin-top: 5px;
+}
+/*scroll*/
+*::-webkit-scrollbar{
+	width: 6px;
+}
+
+*::-webkit-scrollbar-track{
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+	background: grey;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+	
+}
+
+*{
+	scrollbar-width:thin;
+	scrollbar-color:grey transparent;
+}
+
+@media(min-width:1000px) and (max-width: 2000px){
+	.left{
+		width: 70%;
+		float: left;
+		background: white;
+		height: 655px;
+	}
+
+	.right{
+		display: block;
+		width: 30%;
+		float: left;
+		background: silver;
+		height: 655px;
+	}
+	.background{
+		display: none;
+	}
+	.txt-right{
+		display: none;
+	}
+	.indicator{
+		display: none;
+	}
+	.cartboxes{
+		height: 260px;
+		margin-right: 20px;
+		overflow-y: scroll;
+	}
+
+	.cartbox{
+		background: white;
+		box-shadow: 3px 3px grey;
+		border:1px solid black;
+		list-style-type: none;
+		margin-left: -40px;
+		height: 80px;
+		width: 100%;
+		margin-top: 8px;
+		padding: 10px;
+		border:1px solid grey;
+		box-shadow: 3px 3px grey;
+	}
+	.cartbox h2{
+		margin-top: 0px;
+	}
+	.cartbox ul{
+		margin-left: -45px;
+	}
+	.cartboxleft{
+		float: left;
+		width: 40%;
+		
+		height: 80px;
+	}
+	.cartboxmid{
+		float: left;
+		width: 50%;
+		
+		height: 80px;
+	}
+	.cartboxright{
+		float: left;
+		width: 10%;
+		
+		height: 80px;
+	}
+}

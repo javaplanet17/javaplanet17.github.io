@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="desktop.css">
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<link rel="stylesheet" type="text/css" href="mobile.css">
+</head>
+<body onresize="resize();">
+	<div class="background" id="background" onclick="hidecart();">
+		
+	</div>
+
+	<div class="left">
+		<div class="leftinner">
+		<div class="top">
+			<div class="fifty">
+				<h2 style="margin-top: 8px;"><a href="index" style="color: black; text-decoration: none;">Lunchbreak</a></h2>
+			</div>
+			<div class="fifty txt-right">
+				<!-- sidebar -->
+
+				<img src="img/menu.png" style="margin-right: 10px; margin-top: 10px;" onclick="showcart();" width="20px" height="20px">
+				<center><p class="indicator" id="indicator">1</p></center>
+			</div>
+		</div>
+
+		<div class="middle">
+			<h1>Pizza pop</h1>
+			<p>2199 King Street,VA 22134-31551 United States</p>
+			<p>Phone Number:<b>812-899-2912</b></p>
+		</div>
+		<div class="bottom">
+			<ul style=" margin-left: -54px; margin-top: 20px;">
+				<li class="inline"><b><button class="ediblebutton" id="ediblebutton1" onclick="edibletype('food');">Main Dishes</button></b></li>
+				<li class="inline"><b><button class="ediblebutton" id="ediblebutton2" onclick="edibletype('side');">Side Dishes</button></b></li>
+				<li class="inline"><b><button class="ediblebutton" id="ediblebutton3" onclick="edibletype('drink');">Drinks</button></b></li>
+			</ul>
+			<ul id="edibleboxes" class="edibleboxes" style=" margin-left: -44px; padding-top: 0px;">
+				<li class="inline">
+					<div class="ediblebox">
+						<img src="img/largepizza.png" width="100px" height="100px">
+						<h2>large pizza</h2>
+						
+						<p>Signature Italian style pizza in large size</p>
+						<h2>$ 10</h2>
+						<button onclick="cart('large pizza','add');" class="cartbutton">Add to cart</button>
+					</div>
+				</li>
+				<li class="inline">
+					<div class="ediblebox">
+						<img src="img/medpizza.png" width="100px" height="100px">
+						<h2>medium pizza</h2>
+						
+						<p>Signature Italian style pizza in medium size</p>
+						<h2>$ 7</h2>
+						<button onclick="cart('medium pizza','add');" class="cartbutton">Add to cart</button>
+					</div>
+				</li>
+				<li class="inline">
+					<div class="ediblebox">
+						<img src="img/chicken.png" width="100px" height="100px">
+						<h2>chicken wing</h2>
+						
+						<p>8 pieces of chicken wings for family </p>
+						<h2>$ 6</h2>
+						<button onclick="cart('chicken wing','add');" class="cartbutton">Add to cart</button>
+					</div>
+				</li>
+				<li class="inline">
+					<div class="ediblebox">
+						<img src="img/meal.png" width="100px" height="100px">
+						<h2>family meal</h2>
+						
+						<p>Pizza and chicken wing for the whole family</p>
+						<h2>$ 14</h2>
+						<button onclick="cart('family meal','add');" class="cartbutton">Add to cart</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+
+	<div class="right" id="right">
+		<div class="top">
+			<ul style="margin-left: -30px;">
+				<li class="inline">
+					<div class="typebox">
+						<img id="typeboximg1" class="inline" src="img/deliverytruck.png" width="40px" height="40px">
+						<p class="inline" style="vertical-align: top; margin-top: 10px;" onclick="ordertype('delivery');"><button class="orderwordbutton">Delivery</button></p>
+					</div>
+					
+				</li>
+				<li class="inline">
+					<div class="typebox">
+						<img id="typeboximg2" class="inline" src="img/pickupbaggrey.png" width="40px" height="40px">
+						<p class="inline" style="vertical-align: top; margin-top: 10px;" onclick="ordertype('pickup');"><button class="orderwordbutton">Pickup</button></p>
+					</div>
+					
+				</li>
+			</ul>
+		</div>
+
+		<div id="ordertypeboxes" class="middle" style="margin-left: 20px; margin-top: 0px;">
+			<h2 id="orderingtype">Delivery</h2>
+			<b>Address:</b><br>
+			<input id="orderingaddress" class="addressinput" placeholder="Place your address here">
+			<p>Cart:</p>
+		</div>
+
+		<div class="bottom" style="margin-left: 20px;">
+			<ul id="cartboxes" class="cartboxes">
+					<center>
+						<img style="margin-top: 30px;" src="img/cart.png" width="100px" height="100px">
+						<h4>Fill me with food i am hungry</h4>
+					</center>
+			</ul>
+			<h2 id="totalcount">Total: $ 0</h2>
+			<!-- <form action="checkout" method="post">
+				<input onclick="checkout();" class="checkoutbutton" type="submit" name="submit" value="Check out">
+			</form> -->
+			<button onclick="checkout();" class="checkoutbutton">Checkout</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

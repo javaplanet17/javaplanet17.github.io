@@ -1,0 +1,66 @@
+ @media(min-width:700px ) and (max-width: 999px){
+	.left{
+		width: 60%;
+		float: left;
+		background: white;
+		height: 655px;
+	}
+
+	.right{
+		display: block;
+		width: 40%;
+		float: left;
+		background: silver;
+		height: 655px;
+	}
+	.background{
+		display: none;
+	}
+	.txt-right{
+		display: none;
+	}
+	.indicator{
+		display: none;
+	}
+	.cartboxes{
+		height: 260px;
+		margin-right: 20px;
+		overflow-y: scroll;
+	}
+	.cartbox{
+		background: white;
+		box-shadow: 3px 3px grey;
+		border:1px solid black;
+		list-style-type: none;
+		margin-left: -40px;
+		height: 80px;
+		width: 100%;
+		margin-top: 8px;
+		padding: 10px;
+		border:1px solid grey;
+		box-shadow: 3px 3px grey;
+		background: green;
+	}
+	.cartbox h2{
+		margin-top: 0px;
+	}
+	.cartbox ul{
+		margin-left: -45px;
+	}
+	.cartboxleft{
+		float: left;
+		width: 37%;
+		
+		height: 80px;
+	}
+	.cartboxmid{
+		float: left;
+		width: 53%;
+		height: 80px;
+	}
+	.cartboxright{
+		float: left;
+		width: 10%;
+		height: 80px;
+	}
+}
